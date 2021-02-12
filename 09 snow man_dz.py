@@ -1,0 +1,51 @@
+from mcpi.minecraft import Minecraft
+from time import sleep
+from random import randint
+print("hi ok")
+mc = Minecraft.create()
+
+x,y,z = mc.player.getTilePos()
+mc.setBlock(x+2,y,z,80)
+sleep(2)
+mc.setBlock(x+2,y+1,z,80)
+sleep(2)
+mc.setBlock(x+2,y+2,z,86)
+
+x,y,z = mc.player.getTilePos()
+mc.setBlock(x+4,y,z,80)
+sleep(2)
+mc.setBlock(x+4,y+1,z,80)
+sleep(2)
+mc.setBlock(x+4,y+2,z,86)
+
+x,y,z = mc.player.getTilePos()
+mc.setBlock(x+6,y,z,80)
+sleep(2)
+mc.setBlock(x+6,y+1,z,80)
+sleep(2)
+mc.setBlock(x+6,y+2,z,86)
+
+sleep(2)
+x,y,z = mc.player.getTilePos()
+mc.setBlock(x,y,z,42)
+sleep(2)
+mc.setBlock(x,y+1,z,42)
+sleep(2)
+mc.setBlock(x+1,y+1,z,42)
+sleep(2)
+mc.setBlock(x-1,y+1,z,42)
+sleep(2)
+mc.setBlock(x,y+2,z,86)
+
+sleep(2)
+#x,y,z = mc.player.getTilePos()
+x = x+8
+mc.setBlock(x,y,z,42)
+sleep(2)
+mc.setBlock(x,y+1,z,42)
+sleep(2)
+mc.setBlock(x+1,y+1,z,42)
+sleep(2)
+mc.setBlock(x-1,y+1,z,42)
+sleep(2)
+mc.setBlock(x,y+2,z,86)
